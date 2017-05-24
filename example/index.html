@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8" />
+	<title>Switcheroo example</title>
+
+	<link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+<h1>Please send me a message</h1>
+<p>
+	Unfortunately, this contact form is not hooked up to anything behind the scenes so any messages sent will not be read by anyone. Unless I'm telling lies &mdash; in which case, be nice.
+</p>
+
+<form method="post" data-switcheroo>
+	<div class="thank-you">
+		<p>Thank you for your message!</p>
+	</div>
+
+	<label>
+		<span>Your name</span>
+		<input name="name" />
+	</label>
+	<label>
+		<span>Your message</span>
+		<textarea name="message"></textarea>
+	</label>
+	<label>
+		<button>Send!</button>
+	</label>
+</form>
+
+</body>
+
+<script src="../src/switcheroo.js"></script>
+
+</html>
