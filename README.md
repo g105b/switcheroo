@@ -1,4 +1,4 @@
-# Update DOM elements from a serverside render.
+# Update DOM elements from the server.
 
 A common requirement when using a serverside programming language is to update the page asynchronously, without having to refresh the whole page. This often forces one of the following decisions to be made:
 
