@@ -14,7 +14,7 @@ Consider a page with a contact form. When a POST request is made, PHP replaces t
 ```html
 ...
 
-<form method="post">
+<form method="post" data-switcheroo>
 	<label>
 		<span>Your name</span>
 		<input name="name" />
