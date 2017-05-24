@@ -37,7 +37,7 @@ Consider a page with a contact form. When a POST request is made, PHP replaces t
 
 Dropping a `data-switcheroo` attribute on the form tells this library to perform the form submission asynchronously, add a loading indicator to the form while waiting for a response from the server, then replace the form with its thank you message when done.
 
-**Live example: https://switcheroo.g105b.com**
+**Live example: http://switcheroo.g105b.com**
 
 The PHP, JavaScript and HTML code for the above example are available within the `example/` directory.
 
