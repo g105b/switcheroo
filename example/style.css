@@ -1,0 +1,97 @@
+/*
+	We don't want the thank you message to display by default.
+	It is displayed only when the form has a "success" class.
+*/
+.thank-you {
+	display: none;
+	background-color: #cdffcb;
+}
+.success .thank-you {
+	display: block;
+}
+/*
+	Anything after the thank you message can be removed from the page.
+ */
+.success .thank-you~* {
+	display: none;
+}
+
+/*
+	Add a simple spinner to indicate the page is loading.
+ */
+.switcheroo-loading::before {
+	content: "";
+	position: absolute;
+	z-index: 1;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	background: white;
+	opacity: 0.75;
+}
+.switcheroo-loading::after {
+	content: "⌛";
+	font-size: 3rem;
+	position: absolute;
+	z-index: 2;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	animation: spinner 1s infinite;
+}
+
+@keyframes spinner {
+	from {
+		transform: rotate(180deg);
+	}
+}
+
+/*
+	Below is the base styles for the simple example page...
+	all pretty boring stuff.
+ */
+html {
+	font-size: 20px;
+	background: #eee;
+}
+
+* {
+	font-family: monospace;
+}
+
+body {
+	margin: 0;
+	padding: 2rem 1rem;
+	max-width: 40em;
+	background: #fff;
+}
+
+p {
+	line-height: 1.5em;
+}
+
+form {
+	position: relative;
+	padding: 0.5rem;
+	border: 2px solid grey;
+}
+label {
+	display: block;
+}
+label>span {
+	display: block;
+}
+
+input,textarea,button{
+	box-sizing: border-box;
+	width: 100%;
+	padding: 0.5rem;
+}
+textarea {
+	height: 6em;
+}
