@@ -15,6 +15,10 @@ Consider a page with a contact form. When a POST request is made, PHP replaces t
 ...
 
 <form method="post" data-switcheroo>
+	<div class="thank-you">
+		<p>Thank you for your message!</p>
+	</div>
+
 	<label>
 		<span>Your name</span>
 		<input name="name" />
