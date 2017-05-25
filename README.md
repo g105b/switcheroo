@@ -52,7 +52,7 @@ To update a specific element(s) when a form submits, add the CSS selector of the
 	You have clicked the button <output class="update-me">0</output> times!
 </p>
 
-<form method="post" data-switcheroo="update-me">
+<form method="post" data-switcheroo=".update-me">
 	<button name="do" value="increment">Increment the counter</button>
 </form>
 ```
